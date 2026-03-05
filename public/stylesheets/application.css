@@ -1,0 +1,21 @@
+/* selector {
+  key: value;   
+} */
+
+body {
+  background-color: aquamarine;
+}
+
+p a {
+  color: magenta;
+  font-size: x-large;
+}
+
+p {
+  font-size: xx-small;
+  color:red
+}
+
+.big {
+  font-size: xx-large;
+}

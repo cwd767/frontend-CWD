@@ -1,6 +1,8 @@
-<div>
+<div class="row">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
   <% for post in @posts %>
-    <div>
+    <div class="col-12 col-sm-6 col-lg-3 mb-4">
       <h4>
         <%# Display the name of the user that created the post: %>
         <%# 1. find user who created post %>
@@ -12,8 +14,8 @@
           anonymous
         <% end %>
       </h4>
-      <img src="<%= post["image"] %>">
-      <p><%= post["body"] %></p>
+      <img src="<%= post["image"] %>" style="height: 200px; width: 100%; object-fit: cover;">
+      <p style="display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;"><%= post["body"] %></p>
     </div>
   <% end %>
 </div>
